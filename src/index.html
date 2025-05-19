@@ -4,16 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proppay</title>
-    <link href="/css/output.css" rel="stylesheet">
+    <link href="./css/output.css" rel="stylesheet">
+    <link href="./css/input.css" rel="stylesheet">
 </head>
 <body>
     <div class="bg-white">
         <!-- Header -->
-        <header class="absolute inset-x-0 top-0 z-50">
-          <nav class="flex items-center justify-between p-6 lg:px-8 border-b-2 border-b-black-900" aria-label="Global">
-            <div class="flex lg:flex-1 border-b-black">
+        <header class="inset-x-0 top-0 z-20 border-b border-gray-200 bg-background/90 backdrop-blur">
+          <nav class="container flex items-center justify-between md:justify-start py-5 px-16 lg:px-4 mx-auto max-w-[1300px]" aria-label="Global">
+            <div class="flex items-center lg:mr-10 border-b-black">
               <a href="index.html" class="-m-1.5 p-1.5">
-                <span class="sr-only">Proppay</span>
+                <span class="sr-only ">Proppay</span>
                 <img class="h-8 w-auto" src="/img/logo.png" alt="">
               </a>
               <a><span class="-m-1.5 p-4 font-bold text-base">PropPay</span></a>
@@ -27,18 +28,18 @@
                 </svg>
               </button>
             </div>
-            <div class="lg:flex lg:gap-x-12 lg:justify-start">
+            <div class="hidden lg:flex lg:gap-x-12 lg:justify-start">
               <a href="#" class="text-sm/6 text-gray-900">ขายฝากอสังหาฯ</a>
               <a href="investor.html" class="text-sm/6  text-gray-900">ลงทุนกับเรา</a>
               <a href="#" class="text-sm/6  text-gray-900">รู้จักพร็อพเพย์</a>
             </div>
-            <div class="hidden lg:flex lg:flex-1 lg:justify-end">
+            <div class="hidden lg:flex lg:flex-1 lg:justify-end items-center">
             <a href="#" class="text-sm/6 text-gray-900 pr-5">ติดต่อพร็อพเพย์</a>
               <a href="https://proppay-website.vercel.app/signin"text-sm/6 font-semibold text-gray-900"><button type="button" class="rounded-md bg-black px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm">เข้าสู่ระบบ</button></a>
             </div>
           </nav>
           <!-- Mobile menu, show/hide based on menu open state. -->
-          <div class="lg:hidden" role="dialog" aria-modal="true">
+          <div class="hidden" role="dialog" aria-modal="true">
             <!-- Background backdrop, show/hide based on slide-over state. -->
             <div class="fixed inset-0 z-50"></div>
             <div class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
@@ -71,49 +72,54 @@
           </div>
         </header>
       
-        <main class="isolate">
-          <!-- Hero section -->
-          <div class="relative pt-14">
-            <div class="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80" aria-hidden="true">
-              <div class="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"></div>
-            </div>
-            <div class="py-24 sm:py-32 lg:pb-40">
-              <div class="mx-auto max-w-7xl px-6 lg:px-8">
-                <div class="max-w-2xl">
-                  <h1 class="text-balance text-10xl font-semibold tracking-tight text-gray-900 sm:text-7xl">ขายฝากเป็นเรื่องง่าย<span class="text-amber-400">ด้วยพร็อพเพย์</span></h1>
-                  <p class="text-pretty text-lg font-medium text-gray-500 sm:text-xl/8 mt-6">ตรวจสอบราคาและข้อเสนอเบื้องต้น ไม่ว่าจะขายฝากด่วน หรือต้องการผู้ช่วย เพื่อเตรียมความพร้อม ส่งรายละเอียดหาเราได้เลย</p>
-                  <div class="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-4xl">
-                    <dl class="grid max-w-xl grid-cols-1 gap-x-8 gap-y-10 lg:max-w-none lg:grid-cols-2 lg:gap-y-16">
-                      <div class="relative pl-16">
-                        <dt class="text-base/7 font-bold text-gray-900">
-                          <div class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-gray-200">
-                              <svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" viewBox="0 0 1024 1024"><path fill="currentColor" d="M848 359.3H627.7L825.8 109c4.1-5.3.4-13-6.3-13H436c-2.8 0-5.5 1.5-6.9 4L170 547.5c-3.1 5.3.7 12 6.9 12h174.4l-89.4 357.6c-1.9 7.8 7.5 13.3 13.3 7.7L853.5 373c5.2-4.9 1.7-13.7-5.5-13.7M378.2 732.5l60.3-241H281.1l189.6-327.4h224.6L487 427.4h211z"/></svg>
-                          </div>
-                          อนุมัติเร็วทันใจ
-                        </dt>
-                        <dd class="mt-2 text-base/7 text-gray-600">อนุมัติเงินไวภายใน 24 ชม. ไม่ยุ่งยาก ได้เงินไว ติดต่อไถ่ถอนง่าย</dd>
+        
+          <!-- main section -->
+        
+
+               <div class="container mx-auto relative flex flex-col items-start gap-y-5 py-10 md:flex-row md:justify-between lg:h-full lg:gap-6">
+                
+                <div class="w-full md:w-1/2">
+                  <h1 class="text-balance text-10xl font-extrabold tracking-tight text-gray-900 sm:text-6xl">
+                    ขายฝากเป็นเรื่องง่าย
+                    <br/>
+                    <span class="text-amber-400">ด้วยพร็อพเพย์</span>
+                  </h1>
+                  <p class="text-pretty text-lg font-medium text-gray-500 sm:text-xl/8 mt-4">ตรวจสอบราคาและข้อเสนอเบื้องต้น ไม่ว่าจะขายฝากด่วน หรือต้องการผู้ช่วย เพื่อเตรียมความพร้อม ส่งรายละเอียดหาเราได้เลย</p>
+                  <div class="mx-auto mt-4 lg:max-w-4xl">
+                    <dl class="grid max-w-xl grid-cols-1 gap-y-8 gap-x-10 lg:max-w-none lg:grid-cols-2 lg:gap-x-16">
+                      <div class="relative">
+                        <div class="relative flex size-12 mb-5 items-center justify-center rounded-lg bg-gray-200">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" viewBox="0 0 1024 1024"><path fill="currentColor" d="M848 359.3H627.7L825.8 109c4.1-5.3.4-13-6.3-13H436c-2.8 0-5.5 1.5-6.9 4L170 547.5c-3.1 5.3.7 12 6.9 12h174.4l-89.4 357.6c-1.9 7.8 7.5 13.3 13.3 7.7L853.5 373c5.2-4.9 1.7-13.7-5.5-13.7M378.2 732.5l60.3-241H281.1l189.6-327.4h224.6L487 427.4h211z"/></svg>
+                        </div>
+                        <div>
+                          <dt class="text-base/7 font-bold text-gray-900">
+                            อนุมัติเร็วทันใจ
+                          </dt>
+                          <dd class="mt-2 text-base/7 text-gray-600">อนุมัติเงินไวภายใน 24 ชม. ไม่ยุ่งยาก ได้เงินไว ติดต่อไถ่ถอนง่าย</dd>
+                        </div>
                       </div>
-                      <div class="relative pl-16">
+                      <div class="relative">
+                        
                         <dt class="text-base/7 font-semibold text-gray-900">
-                          <div class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-gray-200">
+                          <div class="relative flex size-12 mb-5 items-center justify-center rounded-lg bg-gray-200">
                             <svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" viewBox="0 0 24 24"><path fill="currentColor" fill-rule="evenodd" d="M1.469 6.47a.75.75 0 0 1 1.06-.001l3.919 3.902c.514.511.847.84 1.124 1.052c.26.197.382.22.462.22s.203-.022.463-.22c.278-.21.61-.54 1.125-1.051l.274-.273c.47-.466.873-.868 1.24-1.146c.394-.299.83-.525 1.369-.525c.538 0 .975.226 1.369.524c.367.279.771.68 1.24 1.147l6.136 6.098v-3.743a.75.75 0 0 1 1.5 0V18a.75.75 0 0 1-.75.75h-5.582a.75.75 0 1 1 0-1.5h3.764l-6.09-6.053c-.514-.51-.847-.84-1.125-1.05c-.26-.197-.381-.219-.462-.219c-.08 0-.202.022-.462.22c-.277.21-.61.539-1.124 1.05l-.274.272c-.47.467-.874.87-1.241 1.148c-.394.299-.831.525-1.37.525s-.976-.227-1.37-.526c-.367-.279-.77-.682-1.24-1.149l-.035-.034L1.471 7.53a.75.75 0 0 1-.002-1.06" clip-rule="evenodd"/></svg>
                           </div>
                           อัตราหนี้ต่ำ
                         </dt>
                         <dd class="mt-2 text-base/7 text-gray-600">อัตราเริ่มต้นเพียง 0.75% ต่อเดือน ช่วยประหยัดและมีโอกาสในการปิดหนี้ได้</dd>
                       </div>
-                      <div class="relative pl-16">
+                      <div class="relative">
                         <dt class="text-base/7 font-semibold text-gray-900">
-                          <div class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-gray-200">
+                          <div class="relative flex size-12 mb-5 items-center justify-center rounded-lg bg-gray-200">
                             <svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M15.686 15A14.5 14.5 0 0 1 12 22a14.5 14.5 0 0 1 0-20a10 10 0 1 0 9.542 13M2 12h8.5M20 6V4a2 2 0 1 0-4 0v2"/><rect width="8" height="5" x="14" y="6" rx="1"/></g></svg>
                           </div>
                           ความเป็นส่วนตัวสูง
                         </dt>
                         <dd class="mt-2 text-base/7 text-gray-600">ใส่ใจความเป็นส่วนตัว ทุกข้อมูลของผู้ขายฝากเป็นความลับ</dd>
                       </div>
-                      <div class="relative pl-16">
+                      <div class="relative">
                         <dt class="text-base/7 font-semibold text-gray-900">
-                          <div class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-gray-200">
+                          <div class="relative flex size-12 mb-5 items-center justify-center rounded-lg bg-gray-200">
                             <svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17.5 17.5L22 22m-2-11a9 9 0 1 0-18 0a9 9 0 0 0 18 0M8 14l6-6M8 8l6 6" color="currentColor"/></svg>
                           </div>
                           ไม่เช็คประวัติ
@@ -123,16 +129,46 @@
                     </dl>
                   </div>
                 </div>
+                <div class="flex shrink-0 items-start justify-center md:w-1/2 lg:h-full">
+                  <div class="w-full rounded-md bg-[#f6f6f6] px-4 py-10 ring-1 ring-gray-50/30 md:px-10 lg:w-[440px] lg:px-10">
+                    <h2 class="text-center text-2xl font-semibold lg:mt-6 lg:text-3xl">ส่งข้อมูลขายฝาก</h2>
+                    <p class="mt-3 text-center text-gray-50-foreground"> กรุณากรอกรายละเอียดเพื่อให้ทีมงานติดต่อกลับ </p>
+                    <form class="mt-8">
+                      <fieldset class="grid gap-5">
+                        <div class="space-y-1.5">
+                          <label for="framework" class="flex items-center justify-between text-[15px] font-medium leading-none hover:cursor-pointer peer-disabled:cursor-not-allowed peer-disabled:opacity-70 sm:text-sm">
+                            ประเภทผู้ลงทะเบียน                           
+                          </label>
+                          <!--[--><!--[--><!--[-->
+                           <select name="" id="framework" class="w-full rounded-md border border-gray-900 p-2">
+                              <option value="">โปรดเลือกประเภท</option>
+                              <option value="เจ้าของทรัพย์">เจ้าของทรัพย์</option>
+                              <option value="นายหน้า">นายหน้า</option>
+                            </select>
+                          <!--]--><!--]-->
+                          <select required="" default-value="" aria-hidden="true" tabindex="-1" value="" style="position: absolute; border: 0px; width: 1px; display: inline-block; height: 1px; padding: 0px; margin: -1px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap; overflow-wrap: normal;">
+                          <!---->
+                          <option value="เจ้าของทรัพย์">เจ้าของทรัพย์</option>
+                          <option value="นายหน้า">นายหน้า</option>
+                        </select><!--]--></div>
+                        <div class="w-full">
+                        <label for="v-0-6" class="flex items-center justify-between text-[15px] font-medium leading-none hover:cursor-pointer peer-disabled:cursor-not-allowed peer-disabled:opacity-70 sm:text-sm mb-2"><!--[--><!--[--><span>ชื่อ-นามสกุล <span class="text-destructive">*</span></span><!--]--><!--[--><!----><!--]--><!--]--></label><div class="relative"><!--[--><!----><!--]--><input id="v-0-6" modelvalue="" name="name" class="form-input h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-base ring-offset-background file:border-0 file:bg-transparent file:px-1 file:text-sm file:font-medium file:text-foreground placeholder:text-gray-50-foreground file:hover:cursor-pointer focus:border-input focus:ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 dark:[color-scheme:dark] sm:text-sm" placeholder="ระบุชื่อจริงและนามสกุล" required="" type="text" value=""></div><div style="--move-duration: 300ms;"></div></div><div class="flex flex-col items-center justify-between gap-5 md:flex-row md:gap-4"><div class="w-full"><label for="v-0-7" class="flex items-center justify-between text-[15px] font-medium leading-none hover:cursor-pointer peer-disabled:cursor-not-allowed peer-disabled:opacity-70 sm:text-sm mb-2"><!--[--><!--[--><span>เบอร์โทรศัพท์มือถือ <span class="text-destructive">*</span></span><!--]--><!--[--><!----><!--]--><!--]--></label><div class="relative"><!--[--><!----><!--]--><input id="v-0-7" modelvalue="" name="phone" class="form-input h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-base ring-offset-background file:border-0 file:bg-transparent file:px-1 file:text-sm file:font-medium file:text-foreground placeholder:text-gray-50-foreground file:hover:cursor-pointer focus:border-input focus:ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 dark:[color-scheme:dark] sm:text-sm" placeholder="ระบุเบอร์โทรติดต่อได้" required="" type="tel" value=""></div><div style="--move-duration: 300ms;"></div></div><div class="w-full"><label for="v-0-8" class="flex items-center justify-between text-[15px] font-medium leading-none hover:cursor-pointer peer-disabled:cursor-not-allowed peer-disabled:opacity-70 sm:text-sm mb-2"><!--[--><!--[--><span>อีเมล <!----></span><!--]--><!--[--><!----><!--]--><!--]--></label><div class="relative"><!--[--><!----><!--]--><input id="v-0-8" modelvalue="" name="email" class="form-input h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-base ring-offset-background file:border-0 file:bg-transparent file:px-1 file:text-sm file:font-medium file:text-foreground placeholder:text-gray-50-foreground file:hover:cursor-pointer focus:border-input focus:ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 dark:[color-scheme:dark] sm:text-sm" placeholder="ระบุที่อยู่อีเมล" type="email" value=""></div><div style="--move-duration: 300ms;"></div></div></div><div class="flex flex-col items-center justify-center gap-4 md:flex-row"><div class="w-full"><label for="v-0-9" class="flex items-center justify-between text-[15px] font-medium leading-none hover:cursor-pointer peer-disabled:cursor-not-allowed peer-disabled:opacity-70 sm:text-sm mb-2"><!--[--><!--[--><span>จังหวัด <!----></span><!--]--><!--[--><!----><!--]--><!--]--></label><div class="relative"><!--[--><!----><!--]--><div class="relative"><select id="v-0-9" name="province" class="h-10 w-full appearance-none rounded-md border border-input bg-background px-3 py-2 pr-10 ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 sm:text-sm"><!--[--><!--[--><option disabled="" value="">โปรดเลือกจังหวัด</option><!--[--><option value="กรุงเทพมหานคร">กรุงเทพมหานคร</option><option value="สมุทรปราการ">สมุทรปราการ</option><option value="นนทบุรี">นนทบุรี</option><option value="ปทุมธานี">ปทุมธานี</option><option value="พระนครศรีอยุธยา">พระนครศรีอยุธยา</option><option value="อ่างทอง">อ่างทอง</option><option value="ลพบุรี">ลพบุรี</option><option value="สิงห์บุรี">สิงห์บุรี</option><option value="ชัยนาท">ชัยนาท</option><option value="สระบุรี">สระบุรี</option><option value="ชลบุรี">ชลบุรี</option><option value="ระยอง">ระยอง</option><option value="จันทบุรี">จันทบุรี</option><option value="ตราด">ตราด</option><option value="ฉะเชิงเทรา">ฉะเชิงเทรา</option><option value="ปราจีนบุรี">ปราจีนบุรี</option><option value="นครนายก">นครนายก</option><option value="สระแก้ว">สระแก้ว</option><option value="นครราชสีมา">นครราชสีมา</option><option value="บุรีรัมย์">บุรีรัมย์</option><option value="สุรินทร์">สุรินทร์</option><option value="ศรีสะเกษ">ศรีสะเกษ</option><option value="อุบลราชธานี">อุบลราชธานี</option><option value="ยโสธร">ยโสธร</option><option value="ชัยภูมิ">ชัยภูมิ</option><option value="อำนาจเจริญ">อำนาจเจริญ</option><option value="หนองบัวลำภู">หนองบัวลำภู</option><option value="ขอนแก่น">ขอนแก่น</option><option value="อุดรธานี">อุดรธานี</option><option value="เลย">เลย</option><option value="หนองคาย">หนองคาย</option><option value="มหาสารคาม">มหาสารคาม</option><option value="ร้อยเอ็ด">ร้อยเอ็ด</option><option value="กาฬสินธุ์">กาฬสินธุ์</option><option value="สกลนคร">สกลนคร</option><option value="นครพนม">นครพนม</option><option value="มุกดาหาร">มุกดาหาร</option><option value="เชียงใหม่">เชียงใหม่</option><option value="ลำพูน">ลำพูน</option><option value="ลำปาง">ลำปาง</option><option value="อุตรดิตถ์">อุตรดิตถ์</option><option value="แพร่">แพร่</option><option value="น่าน">น่าน</option><option value="พะเยา">พะเยา</option><option value="เชียงราย">เชียงราย</option><option value="แม่ฮ่องสอน">แม่ฮ่องสอน</option><option value="นครสวรรค์">นครสวรรค์</option><option value="อุทัยธานี">อุทัยธานี</option><option value="กำแพงเพชร">กำแพงเพชร</option><option value="ตาก">ตาก</option><option value="สุโขทัย">สุโขทัย</option><option value="พิษณุโลก">พิษณุโลก</option><option value="พิจิตร">พิจิตร</option><option value="เพชรบูรณ์">เพชรบูรณ์</option><option value="ราชบุรี">ราชบุรี</option><option value="กาญจนบุรี">กาญจนบุรี</option><option value="สุพรรณบุรี">สุพรรณบุรี</option><option value="นครปฐม">นครปฐม</option><option value="สมุทรสาคร">สมุทรสาคร</option><option value="สมุทรสงคราม">สมุทรสงคราม</option><option value="เพชรบุรี">เพชรบุรี</option><option value="ประจวบคีรีขันธ์">ประจวบคีรีขันธ์</option><option value="นครศรีธรรมราช">นครศรีธรรมราช</option><option value="กระบี่">กระบี่</option><option value="พังงา">พังงา</option><option value="ภูเก็ต">ภูเก็ต</option><option value="สุราษฎร์ธานี">สุราษฎร์ธานี</option><option value="ระนอง">ระนอง</option><option value="ชุมพร">ชุมพร</option><option value="สงขลา">สงขลา</option><option value="สตูล">สตูล</option><option value="ตรัง">ตรัง</option><option value="พัทลุง">พัทลุง</option><option value="ปัตตานี">ปัตตานี</option><option value="ยะลา">ยะลา</option><option value="นราธิวาส">นราธิวาส</option><option value="บึงกาฬ">บึงกาฬ</option><!--]--><!--]--><!--]--></select><span class="pointer-events-none absolute inset-y-0 right-3 flex items-center justify-center"><!--[--><span class="iconify i-lucide:chevrons-up-down h-4 w-4 text-gray-50-foreground" aria-hidden="true" style=""></span><!--]--></span></div></div><div style="--move-duration: 300ms;"><p class="mt-1.5 text-sm text-gray-50-foreground">เลือกจังหวัดของทรัพย์</p></div></div><div class="w-full" disabled="false" style=""><label for="v-0-20" class="flex items-center justify-between text-[15px] font-medium leading-none hover:cursor-pointer peer-disabled:cursor-not-allowed peer-disabled:opacity-70 sm:text-sm mb-2"><span>เขต <!----></span><!----></label><div class="relative"><!----><div class="relative"><select id="v-0-20" name="amphure" class="h-10 w-full appearance-none rounded-md border border-input bg-background px-3 py-2 pr-10 ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 sm:text-sm"><option disabled="" value="">โปรดเลือกเขต</option><option value="เมืองฉะเชิงเทรา">เมืองฉะเชิงเทรา</option><option value="บางคล้า">บางคล้า</option><option value="บางน้ำเปรี้ยว">บางน้ำเปรี้ยว</option><option value="บางปะกง">บางปะกง</option><option value="บ้านโพธิ์">บ้านโพธิ์</option><option value="พนมสารคาม">พนมสารคาม</option><option value="ราชสาส์น">ราชสาส์น</option><option value="สนามชัยเขต">สนามชัยเขต</option><option value="แปลงยาว">แปลงยาว</option><option value="ท่าตะเกียบ">ท่าตะเกียบ</option><option value="คลองเขื่อน">คลองเขื่อน</option></select><span class="pointer-events-none absolute inset-y-0 right-3 flex items-center justify-center"><span class="iconify i-lucide:chevrons-up-down h-4 w-4 text-gray-50-foreground" aria-hidden="true"></span></span></div></div><div style="--move-duration: 300ms;"><p class="mt-1.5 text-sm text-gray-50-foreground">เลือกเขตของทรัพย์</p></div></div></div><div class="space-y-2 text-xs"><p class="text-gray-50-foreground"> * การกดปุ่มยืนยันส่งข้อมูลถือว่าให้ความยินยอมในการเก็บรวบรวม ใช้และเปิดเผยข้อมูลส่วนบุคคลในกิจกรรมของบริษัทฯ โดยเป็นไปตาม <a aria-current="page" href="/#" class="router-link-active router-link-exact-active text-primary underline-offset-2 hover:underline">นโยบายความเป็นส่วนตัว</a> และ <a aria-current="page" href="/#" class="router-link-active router-link-exact-active text-primary underline-offset-2 hover:underline">เงื่อนไขการใช้งาน</a></p></div><div class="flex flex-col gap-6"><button class="inline-flex items-center justify-center gap-2 text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 bg-primary text-white hover:bg-primary/90 h-11 rounded-md px-8" type="submit"><!--[--><span class="iconify i-lucide:send" aria-hidden="true" style=""></span> ยืนยันส่งข้อมูล<!--]--></button><button class="inline-flex items-center justify-center gap-2 text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-11 rounded-md px-8" type="button"><!--[-->
+                        <span class="iconify i-lucide:eraser" aria-hidden="true" style="">
+                        </span> 
+                        ล้างแบบฟอร์มข้อมูล
+                      </button>
+                      </div>
+                      </fieldset>
+                      </form>
+                      </div>
+                </div>
+
               </div>
-            </div>
-            <!-- <div class="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]" aria-hidden="true">
-              <div class="relative left-[calc(50%+3rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%+36rem)] sm:w-[72.1875rem]" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"></div>
-            </div> -->
-          </div>    
+              
 
           <!-- FAQS -->
-          <div class="bg-white">
-            <div class="mx-auto mt-3 max-w-7xl px-6 sm:mt-56 lg:px-8">
+          <div class="faqs">
+            <div class="max-w-screen-md mx-auto pb-4 px-6 lg:px-4 lg:pb-8">
               <div class="mx-auto max-w-2xl lg:text-center">
                 <p class="mt-2 text-pretty text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl lg:text-balance">คำถามขายฝากที่พบบ่อย</p>
                 <p class="mt-6 text-pretty text-lg/8 text-gray-600">ทุกเรื่องที่คุณอยากรู้เกี่ยวกับการขายฝาก</p>
@@ -149,14 +185,15 @@
                     </span>
                   </button>
                 </dt>
-                <dd class="mt-2 pr-12" id="faq-0">
+                <dd class="mt-2 pr-12 fag-dd" id="faq-0">
                   <p class="text-base/7 text-gray-600">ขายฝาก คือ สัญญาซื้อขายซึ่งกรรมสิทธิ์ในทรัพย์สินตกไปยังผู้ซื้อ โดยมีข้อตกลงกันว่าผู้ขายอาจไถ่ทรัพย์นั้นคืนได้ โดยราคาซื้อคืนมักรวมดอกเบี้ยเข้าไปแล้ว</p>
                 </dd>
               </div>
+              <hr>
               <div class="pt-6">
                 <dt>
                   <!-- Expand/collapse question button -->
-                  <button type="button" class="flex w-full items-start justify-between text-left text-gray-900" aria-controls="faq-0" aria-expanded="false">
+                  <button type="button" class="flex w-full items-start justify-between text-left text-gray-900" aria-controls="faq-1" aria-expanded="false">
                     <span class="text-base/7 font-semibold">ต้องมีเอกสารรายได้มาแสดงหรือเช็คเครดิตบูโร่หรือไม่</span>
                     <span class="ml-6 flex h-7 items-center">
                       <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
@@ -165,14 +202,15 @@
                     </span>
                   </button>
                 </dt>
-                <dd class="mt-2 pr-12" id="faq-0">
+                <dd class="mt-2 pr-12 fag-dd" id="faq-1">
                   <p class="text-base/7 text-gray-600">พร็อพเพย์ (PropPay) พิจารณาจากทรัพย์ที่เป็นหลักประกันแต่เพียงอย่างเดียวและจะไม่ขอดูประวัติการชำระหนี้และเอกสารแสดงรายได้ใด</p>
                 </dd>
               </div>
+              <hr>
               <div class="pt-6">
                 <dt>
                   <!-- Expand/collapse question button -->
-                  <button type="button" class="flex w-full items-start justify-between text-left text-gray-900" aria-controls="faq-0" aria-expanded="false">
+                  <button type="button" class="flex w-full items-start justify-between text-left text-gray-900" aria-controls="faq-2" aria-expanded="false">
                     <span class="text-base/7 font-semibold">ผู้กู้จะได้วงเงินกู้เท่าไหร่ของราคาประเมิน</span>
                     <span class="ml-6 flex h-7 items-center">
                       <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
@@ -181,14 +219,15 @@
                     </span>
                   </button>
                 </dt>
-                <dd class="mt-2 pr-12" id="faq-0">
+                <dd class="mt-2 pr-12 fag-dd" id="faq-2">
                   <p class="text-base/7 text-gray-600">เนื่องจากดอกเบี้ยของการกู้ยืมที่ผ่านระบบพร็อพเพย์ (PropPay) มีราคาต่ำกว่านายทุนนอกระบบส่วนใหญ่ เราจึงต้องมีมาตรการจำกัดวงเงินกู้ เพื่อป้องกันความเสี่ยงให้นักลงทุนควบคู่ไปด้วยโดยเริ่ม 45-50% ของราคาประเมิน แต่ไม่เกิน 65%</p>
                 </dd>
               </div>
+              <hr>
               <div class="pt-6">
                 <dt>
                   <!-- Expand/collapse question button -->
-                  <button type="button" class="flex w-full items-start justify-between text-left text-gray-900" aria-controls="faq-0" aria-expanded="false">
+                  <button type="button" class="flex w-full items-start justify-between text-left text-gray-900" aria-controls="faq-3" aria-expanded="false">
                     <span class="text-base/7 font-semibold">เวลาไถ่ขายฝาก สูงสุดกี่ปี</span>
                     <span class="ml-6 flex h-7 items-center">
                       <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
@@ -197,88 +236,109 @@
                     </span>
                   </button>
                 </dt>
-                <dd class="mt-2 pr-12" id="faq-0">
+                <dd class="mt-2 pr-12 fag-dd" id="faq-3">
                   <p class="text-base/7 text-gray-600">ระยะเวลาไถ่ขายฝากจะต้องจดทะเบียนไว้ที่โฉนด ณ กรมที่ดิน กำหนดไว้ 1 ปีขึ้นไป แต่ไม่เกิน 10 ปี ต้องของไถ่ถอนภายในกำหนดเวลาสัญญาขายฝาก หรือภายในเวลาที่กำหนด การทำข้อตกลงขยายระยะเวลาไถ่ขายฝากจะต้องทำเป็นหนังสือจดทะเบียนต่อเจ้าพนักงาน</p>
                 </dd>
               </div>
+              <hr>
+              <script>
+              document.addEventListener("DOMContentLoaded", function() {
+                // Select all FAQ toggle buttons
+                const faqButtons = document.querySelectorAll('button[aria-controls^="faq-"]');
+                faqButtons.forEach(function(btn) {
+                  btn.addEventListener("click", function() {
+                    const faqId = btn.getAttribute("aria-controls");
+                    const faqContent = document.getElementById(faqId);
+                    const expanded = btn.getAttribute("aria-expanded") === "true";
+                    // Toggle aria-expanded
+                    btn.setAttribute("aria-expanded", !expanded);
+                    // Toggle visibility
+                    if (faqContent) {
+                      faqContent.classList.toggle("fag-dd");
+                    }
+                  });
+                  // Hide all FAQ answers by default
+                  const faqId = btn.getAttribute("aria-controls");
+                  const faqContent = document.getElementById(faqId);
+                  if (faqContent) {
+                    faqContent.classList.add("fag-dd");
+                  }
+                });
+              });
+              </script>
             </div>
           </div>
 
-          <!-- Testimonial section -->
-          <div class="mx-auto mt-32 max-w-7xl sm:mt-56 sm:px-6 lg:px-8">
-            <div class="relative overflow-hidden bg-gray-900 px-6 py-20 shadow-xl sm:rounded-3xl sm:px-10 sm:py-24 md:px-12 lg:px-20">
-              <img class="absolute inset-0 h-full w-full object-cover brightness-150 saturate-0" src="https://images.unsplash.com/photo-1601381718415-a05fb0a261f3?ixid=MXwxMjA3fDB8MHxwcm9maWxlLXBhZ2V8ODl8fHxlbnwwfHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1216&q=80" alt="">
-              <div class="absolute inset-0 bg-gray-900/90 mix-blend-multiply"></div>
-              <div class="absolute -left-80 -top-56 transform-gpu blur-3xl" aria-hidden="true">
-                <div class="aspect-[1097/845] w-[68.5625rem] bg-gradient-to-r from-[#ff4694] to-[#776fff] opacity-[0.45]" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"></div>
+          <!-- QR CODE section -->
+          <div class="container mx-auto relative flex flex-col items-center gap-y-5 py-20 md:flex-row md:justify-between lg:h-full lg:gap-4">
+              <div class="flex shrink-0 items-start justify-center flex-1 lg:h-full">
+                <img src="/img/QR.png" alt="Girl in a jacket" width="360" height="360">
               </div>
-              <div class="hidden md:absolute md:bottom-16 md:left-[50rem] md:block md:transform-gpu md:blur-3xl" aria-hidden="true">
-                <div class="aspect-[1097/845] w-[68.5625rem] bg-gradient-to-r from-[#ff4694] to-[#776fff] opacity-25" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"></div>
+              <div class="md:w-1/2">
+                <h6 class="text-balance text-sm font-semibold tracking-tight text-gray-900 sm:text-4xl">หากไม่พบข้อมูลที่คุณต้องการ ติดต่อเรา <br class="hidden sm:block" />และแชทมาสอบถามบน LINE Official Account ได้เลย</h6>
+                <p class="text-pretty text-lg font-medium text-gray-500 sm:text-xl/8 mt-6"> ทีมงานพร็อพเพย์รอให้ความช่วยเหลือคุณทุกเรื่องเกี่ยวกับขายฝาก </p>
+                <div class="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-5 lg:max-w-4xl">
+                  <a href="tel:0891117935" class="inline-flex gap-2 items-center justify-center min-w-[220px] px-2 py-4 bg-black text-center text-white rounded-lg border-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M20 15.5c-1.25 0-2.45-.2-3.57-.57a1.02 1.02 0 0 0-1.02.24l-2.2 2.2a15.05 15.05 0 0 1-6.59-6.59l2.2-2.21a.96.96 0 0 0 .25-1A11.4 11.4 0 0 1 8.5 4c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1c0 9.39 7.61 17 17 17c.55 0 1-.45 1-1v-3.5c0-.55-.45-1-1-1M19 12h2a9 9 0 0 0-9-9v2c3.87 0 7 3.13 7 7m-4 0h2c0-2.76-2.24-5-5-5v2c1.66 0 3 1.34 3 3"/></svg>
+                    โทร 089 111 7935
+                  </a>
+                </div>
               </div>
-              <div class="relative mx-auto max-w-2xl lg:mx-0">
-                <img class="h-12 w-auto" src="https://tailwindui.com/plus/img/logos/workcation-logo-white.svg" alt="">
-                <figure>
-                  <blockquote class="mt-6 text-lg font-semibold text-white sm:text-xl/8">
-                    <p>“Amet amet eget scelerisque tellus sit neque faucibus non eleifend. Integer eu praesent at a. Ornare arcu gravida natoque erat et cursus tortor consequat at. Vulputate gravida sociis enim nullam ultricies habitant malesuada lorem ac.”</p>
-                  </blockquote>
-                  <figcaption class="mt-6 text-base text-white">
-                    <div class="font-semibold">Judith Black</div>
-                    <div class="mt-1">CEO of Tuple</div>
-                  </figcaption>
-                </figure>
-              </div>
-            </div>
           </div>
       
           <!-- Pricing section -->
-          <div class="py-24 sm:pt-48">
-            <div class="mx-auto max-w-7xl px-6 lg:px-8">
+          <div class="pricing">
+            <div class="mx-auto container px-6 lg:px-8 container">
               <div class="mx-auto max-w-2xl lg:text-center">
-                <h2 class="text-base/7 font-semibold text-indigo-600">Pricing</h2>
-                <p class="mt-2 text-pretty text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl lg:text-balance">Pricing that grows with you</p>
-                <p class="mt-6 text-pretty text-lg/8 text-gray-600">Quis tellus eget adipiscing convallis sit sit eget aliquet quis. Suspendisse eget egestas a elementum pulvinar et feugiat blandit at. In mi viverra elit nunc.</p>
+                <h2 class="text-base/7 font-semibold">การลงทุนขายฝาก</h2>
+                <p class="mt-2 text-pretty text-6xl font-semibold tracking-tight text-gray-900 sm:text-5xl lg:text-balance">รูปแบบการลงทุน</p>
+                <p class="mt-6 text-pretty text-lg/10 text-gray-500">รับผลตอบแทนเพื่อให้เหมาะสมกับรูปแบบการลงทุนที่คุณต้องการ</p>
               </div>
-              <div class="isolate mx-auto mt-16 grid max-w-md grid-cols-1 gap-y-8 sm:mt-20 lg:mx-0 lg:max-w-none lg:grid-cols-3">
+              <div class="isolate mx-auto mt-12 grid max-w-md grid-cols-1 gap-y-8 sm:mt-20 lg:mx-0 lg:max-w-none lg:grid-cols-2 lg:gap-x-10">
                 <div class="flex flex-col justify-between rounded-3xl bg-white p-8 ring-1 ring-gray-200 lg:mt-8 lg:rounded-r-none xl:p-10">
                   <div>
                     <div class="flex items-center justify-between gap-x-4">
-                      <h3 id="tier-freelancer" class="text-lg/8 font-semibold text-gray-900">Freelancer</h3>
+                      <div>
+                        <h3 id="tier-freelancer" class="text-2xl font-semibold text-gray-900">รับผลตอบแทนเป็นรายเดือน</h3>
+                        <p class="text-sm/6 text-gray-600">สำหรับผู้ที่ต้องการสร้างผลตอบแทนคงที่แบบความเสี่ยงต่ำ</p>
+                      </div>
+                      <div>
+                        <p class="mt-6 flex items-baseline gap-x-1">
+                          <span class="text-4xl font-semibold tracking-tight text-gray-900">5</span>
+                          <span class="text-sm/6 font-semibold text-gray-600">% เริ่มต้น</span>
+                        </p>
+                      </div>
                     </div>
-                    <p class="mt-4 text-sm/6 text-gray-600">The essentials to provide your best work for clients.</p>
-                    <p class="mt-6 flex items-baseline gap-x-1">
-                      <span class="text-4xl font-semibold tracking-tight text-gray-900">$19</span>
-                      <span class="text-sm/6 font-semibold text-gray-600">/month</span>
-                    </p>
-                    <ul role="list" class="mt-8 space-y-3 text-sm/6 text-gray-600">
+        
+                      <hr class="text-gray-300 my-3 -mx-8 lg:-mx-10">
+
+                      <div>
+                        <h3 class="text-lg font-bold">เงื่อนไขการลงทุน</h3>
+                        <p>รายละเอียดการลงทุนที่พร็อพเพย์นำเสนอ</p>
+                      </div>
+                    <ul role="list" class="mt-8 text-sm/6 text-gray-600 grid grid-cols-1 md:grid-cols-2 gap-x-3 gap-y-3">
                       <li class="flex gap-x-3">
-                        <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
-                          <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd" />
-                        </svg>
-                        5 products
+                        <svg xmlns="http://www.w3.org/2000/svg" class="size-6 text-green-500" width="24" height="24" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="m8 12.5l3 3l5-6"/><circle cx="12" cy="12" r="10"/></g></svg>
+                        รับผลตอบแทน เริ่มต้น 5% ต่อปี
                       </li>
                       <li class="flex gap-x-3">
-                        <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
-                          <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd" />
-                        </svg>
-                        Up to 1,000 subscribers
+                        <svg xmlns="http://www.w3.org/2000/svg" class="size-6 text-green-500" width="24" height="24" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="m8 12.5l3 3l5-6"/><circle cx="12" cy="12" r="10"/></g></svg>
+                        การันตีผลตอบแทน 12 เดือน
                       </li>
                       <li class="flex gap-x-3">
-                        <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
-                          <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd" />
-                        </svg>
-                        Basic analytics
+                        <svg xmlns="http://www.w3.org/2000/svg" class="size-6 text-green-500" width="24" height="24" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="m8 12.5l3 3l5-6"/><circle cx="12" cy="12" r="10"/></g></svg>
+                        รับเงินก้อนวันแรก 3 เดือนล่วงหน้า
                       </li>
                       <li class="flex gap-x-3">
-                        <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
-                          <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd" />
-                        </svg>
-                        48-hour support response time
+                        <svg xmlns="http://www.w3.org/2000/svg" class="size-6 text-green-500" width="24" height="24" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="m8 12.5l3 3l5-6"/><circle cx="12" cy="12" r="10"/></g></svg>
+                        รับเงินรายเดือน 9 เดือน
                       </li>
                     </ul>
                   </div>
-                  <a href="#" aria-describedby="tier-freelancer" class="mt-8 block rounded-md px-3 py-2 text-center text-sm/6 font-semibold text-indigo-600 ring-1 ring-inset ring-indigo-200 hover:ring-indigo-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Buy plan</a>
+                  <hr class="text-gray-300 mb-5 mt-12 -xm-8 lg:-mx-10">
+                  <a href="#" aria-describedby="tier-freelancer" class=" block rounded-md px-3 py-2 text-center text-sm/6 font-medium bg-black text-white ring-1 ring-inset ring-indigo-200 hover:ring-indigo-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">ติดต่อสอบถามเจ้าหน้าที่</a>
                 </div>
-                <div class="flex flex-col justify-between rounded-3xl bg-white p-8 ring-1 ring-gray-200 lg:z-10 lg:rounded-b-none xl:p-10">
+       <!--         <div class="flex flex-col justify-between rounded-3xl bg-white p-8 ring-1 ring-gray-200 lg:z-10 lg:rounded-b-none xl:p-10">
                   <div>
                     <div class="flex items-center justify-between gap-x-4">
                       <h3 id="tier-startup" class="text-lg/8 font-semibold text-indigo-600">Startup</h3>
@@ -291,210 +351,111 @@
                     </p>
                     <ul role="list" class="mt-8 space-y-3 text-sm/6 text-gray-600">
                       <li class="flex gap-x-3">
-                        <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
-                          <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd" />
-                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="size-6 text-green-500" width="24" height="24" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="m8 12.5l3 3l5-6"/><circle cx="12" cy="12" r="10"/></g></svg>
                         25 products
                       </li>
                       <li class="flex gap-x-3">
-                        <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
-                          <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd" />
-                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="size-6 text-green-500" width="24" height="24" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="m8 12.5l3 3l5-6"/><circle cx="12" cy="12" r="10"/></g></svg>
                         Up to 10,000 subscribers
                       </li>
                       <li class="flex gap-x-3">
-                        <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
-                          <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd" />
-                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="size-6 text-green-500" width="24" height="24" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="m8 12.5l3 3l5-6"/><circle cx="12" cy="12" r="10"/></g></svg>
                         Advanced analytics
                       </li>
                       <li class="flex gap-x-3">
-                        <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
-                          <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd" />
-                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="size-6 text-green-500" width="24" height="24" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="m8 12.5l3 3l5-6"/><circle cx="12" cy="12" r="10"/></g></svg>
                         24-hour support response time
                       </li>
                       <li class="flex gap-x-3">
-                        <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
-                          <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd" />
-                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="size-6 text-green-500" width="24" height="24" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="m8 12.5l3 3l5-6"/><circle cx="12" cy="12" r="10"/></g></svg>
                         Marketing automations
                       </li>
                     </ul>
                   </div>
                   <a href="#" aria-describedby="tier-startup" class="mt-8 block rounded-md bg-indigo-600 px-3 py-2 text-center text-sm/6 font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Buy plan</a>
-                </div>
+                </div> -->
+
+
                 <div class="flex flex-col justify-between rounded-3xl bg-white p-8 ring-1 ring-gray-200 lg:mt-8 lg:rounded-l-none xl:p-10">
                   <div>
                     <div class="flex items-center justify-between gap-x-4">
-                      <h3 id="tier-enterprise" class="text-lg/8 font-semibold text-gray-900">Enterprise</h3>
-                    </div>
-                    <p class="mt-4 text-sm/6 text-gray-600">Dedicated support and infrastructure for your company.</p>
-                    <p class="mt-6 flex items-baseline gap-x-1">
-                      <span class="text-4xl font-semibold tracking-tight text-gray-900">$99</span>
-                      <span class="text-sm/6 font-semibold text-gray-600">/month</span>
-                    </p>
-                    <ul role="list" class="mt-8 space-y-3 text-sm/6 text-gray-600">
+                      <div>
+                        <h3 id="tier-enterprise" class="text-2xl font-semibold text-gray-900">รับผลตอบแทนเป็นเงินก้อนครั้งเดียว</h3>
+                        <p class="text-sm/6 text-gray-600 block">สำหรับผู้ที่ต้องการสร้างผลตอบแทนทันทีเมื่อเริ่มสัญญา</p>
+                      </div>
+                      <div>                        
+                        <p class="mt-6 flex items-baseline gap-x-1">                            
+                          <span class="text-4xl font-semibold tracking-tight text-gray-900">7</span>
+                          <span class="text-sm/6 font-semibold text-gray-600">% เริ่มต้น</span>                              
+                        </p>
+                      </div>
+                  </div>
+                    <hr class="text-gray-300 my-3 -xm-8 lg:-mx-10">
+                      <div>
+                        <h3 class="text-lg font-bold">เงื่อนไขการลงทุน</h3>
+                        <p>รายละเอียดการลงทุนที่พร็อพเพย์นำเสนอ</p>
+                      </div>
+                    <ul role="list" class="mt-8 text-sm/6 text-gray-600 grid grid-cols-1 md:grid-cols-2 gap-x-3 gap-y-3">
                       <li class="flex gap-x-3">
-                        <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
-                          <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd" />
-                        </svg>
-                        Unlimited products
+                        <svg xmlns="http://www.w3.org/2000/svg" class="size-6 text-green-500" width="24" height="24" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="m8 12.5l3 3l5-6"/><circle cx="12" cy="12" r="10"/></g></svg>
+                        รับผลตอบแทน เริ่มต้น 7% ต่อสัญญา
                       </li>
                       <li class="flex gap-x-3">
-                        <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
-                          <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd" />
-                        </svg>
-                        Unlimited subscribers
+                        <svg xmlns="http://www.w3.org/2000/svg" class="size-6 text-green-500" width="24" height="24" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="m8 12.5l3 3l5-6"/><circle cx="12" cy="12" r="10"/></g></svg>
+                        รับเงินก้อนวันแรก ณ วันทำสัญญา
                       </li>
                       <li class="flex gap-x-3">
-                        <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
-                          <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd" />
-                        </svg>
-                        Advanced analytics
+                        <svg xmlns="http://www.w3.org/2000/svg" class="size-6 text-green-500" width="24" height="24" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="m8 12.5l3 3l5-6"/><circle cx="12" cy="12" r="10"/></g></svg>
+                        การันตีผลตอบแทน
                       </li>
                       <li class="flex gap-x-3">
-                        <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
-                          <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd" />
-                        </svg>
-                        1-hour, dedicated support response time
+                        <svg xmlns="http://www.w3.org/2000/svg" class="size-6 text-green-500" width="24" height="24" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="m8 12.5l3 3l5-6"/><circle cx="12" cy="12" r="10"/></g></svg>
+                        การันตีการซื้อคืน
                       </li>
-                      <li class="flex gap-x-3">
-                        <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
-                          <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd" />
-                        </svg>
-                        Marketing automations
-                      </li>
+
                     </ul>
                   </div>
-                  <a href="#" aria-describedby="tier-enterprise" class="mt-8 block rounded-md px-3 py-2 text-center text-sm/6 font-semibold text-indigo-600 ring-1 ring-inset ring-indigo-200 hover:ring-indigo-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Buy plan</a>
+                  <hr class="text-gray-300 mb-5 mt-12 -xm-8 lg:-mx-10">
+                  <a href="#" aria-describedby="tier-enterprise" class="block rounded-md px-3 py-2 text-center text-sm/6 font-medium bg-black text-white ring-1 ring-inset ring-indigo-200 hover:ring-indigo-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">ติดต่อสอบถามเจ้าหน้าที่</a>
                 </div>
               </div>
             </div>
           </div>
       
-          <!-- FAQs -->
-          <div class="mx-auto max-w-2xl divide-y divide-gray-900/10 px-6 pb-8 sm:pb-24 sm:pt-12 lg:max-w-7xl lg:px-8 lg:pb-32">
-            <h2 class="text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">Frequently asked questions</h2>
-            <dl class="mt-10 space-y-8 divide-y divide-gray-900/10">
-              <div class="pt-8 lg:grid lg:grid-cols-12 lg:gap-8">
-                <dt class="text-base/7 font-semibold text-gray-900 lg:col-span-5">What&#039;s the best thing about Switzerland?</dt>
-                <dd class="mt-4 lg:col-span-7 lg:mt-0">
-                  <p class="text-base/7 text-gray-600">I don&#039;t know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.</p>
-                </dd>
-              </div>
-      
-              <!-- More questions... -->
-            </dl>
-          </div>
-      
-          <!-- CTA section -->
-
-        </main>
-
-<!--
-  This example requires some changes to your config:
-  
-  ```
-  // tailwind.config.js
-  module.exports = {
-    // ...
-    plugins: [
-      // ...
-      require('@tailwindcss/forms'),
-    ],
-  }
-  ```
--->
-<footer class="bg-white">
-  <div class="mx-auto max-w-7xl px-6 pb-8 pt-16 sm:pt-24 lg:px-8 lg:pt-32">
-    <div class="xl:grid xl:grid-cols-3 xl:gap-8">
-      <img class="h-9" src="https://tailwindui.com/plus/img/logos/mark.svg?color=indigo&shade=600" alt="Company name">
-      <div class="mt-16 grid grid-cols-2 gap-8 xl:col-span-2 xl:mt-0">
-        <div class="md:grid md:grid-cols-2 md:gap-8">
-          <div>
-            <h3 class="text-sm/6 font-semibold text-gray-900">Solutions</h3>
-            <ul role="list" class="mt-6 space-y-4">
-              <li>
-                <a href="#" class="text-sm/6 text-gray-600 hover:text-gray-900">Marketing</a>
-              </li>
-              <li>
-                <a href="#" class="text-sm/6 text-gray-600 hover:text-gray-900">Analytics</a>
-              </li>
-              <li>
-                <a href="#" class="text-sm/6 text-gray-600 hover:text-gray-900">Automation</a>
-              </li>
-              <li>
-                <a href="#" class="text-sm/6 text-gray-600 hover:text-gray-900">Commerce</a>
-              </li>
-              <li>
-                <a href="#" class="text-sm/6 text-gray-600 hover:text-gray-900">Insights</a>
-              </li>
-            </ul>
-          </div>
-          <div class="mt-10 md:mt-0">
-            <h3 class="text-sm/6 font-semibold text-gray-900">Support</h3>
-            <ul role="list" class="mt-6 space-y-4">
-              <li>
-                <a href="#" class="text-sm/6 text-gray-600 hover:text-gray-900">Submit ticket</a>
-              </li>
-              <li>
-                <a href="#" class="text-sm/6 text-gray-600 hover:text-gray-900">Documentation</a>
-              </li>
-              <li>
-                <a href="#" class="text-sm/6 text-gray-600 hover:text-gray-900">Guides</a>
-              </li>
-            </ul>
+          <!-- การรับรองจากหน่วยงานรัฐ -->
+          <div class="container mx-auto py-10 lg:py-12 lg:px-4">
+            <h2 class="pb-4 text-center text-2xl text-gray md:pb-10 lg:text-3xl"> การรับรองจากหน่วยงานรัฐ </h2>
+            <div class="mt-8 flex flex-wrap items-center justify-center gap-16 md:mt-4"><!--[--><div>
+              <span class="sr-only">Company One</span>
+              <img src="https://calldi.co/wp-content/uploads/2023/12/logo_ETDA_X_color-200x50.webp" alt="" width="160" height="40">
+            </div>
+            <div>
+              <span class="sr-only">Company Two</span>
+              <img src="/img/dbd.jpg" alt="" width="202" height="96">
+            </div>
           </div>
         </div>
-        <div class="md:grid md:grid-cols-2 md:gap-8">
-          <div>
-            <h3 class="text-sm/6 font-semibold text-gray-900">Company</h3>
-            <ul role="list" class="mt-6 space-y-4">
-              <li>
-                <a href="#" class="text-sm/6 text-gray-600 hover:text-gray-900">About</a>
-              </li>
-              <li>
-                <a href="#" class="text-sm/6 text-gray-600 hover:text-gray-900">Blog</a>
-              </li>
-              <li>
-                <a href="#" class="text-sm/6 text-gray-600 hover:text-gray-900">Jobs</a>
-              </li>
-              <li>
-                <a href="#" class="text-sm/6 text-gray-600 hover:text-gray-900">Press</a>
-              </li>
-            </ul>
-          </div>
-          <div class="mt-10 md:mt-0">
-            <h3 class="text-sm/6 font-semibold text-gray-900">Legal</h3>
-            <ul role="list" class="mt-6 space-y-4">
-              <li>
-                <a href="#" class="text-sm/6 text-gray-600 hover:text-gray-900">Terms of service</a>
-              </li>
-              <li>
-                <a href="#" class="text-sm/6 text-gray-600 hover:text-gray-900">Privacy policy</a>
-              </li>
-              <li>
-                <a href="#" class="text-sm/6 text-gray-600 hover:text-gray-900">License</a>
-              </li>
-            </ul>
-          </div>
+      
+<footer class="footer">
+  <div class="container mx-auto py-4 lg:py-8">
+
+    <div class=" px-4">
+    <div class="flex flex-col justify-between gap-5 pb-10 lg:flex-row lg:pb-16">
+      <div>
+        <div class="flex lg:flex-1 border-b-black">
+          <a href="index.html" class="-m-1.5 p-1.5">
+            <span class="sr-only">Proppay</span>
+            <img class="h-8 w-auto" src="/img/logo.png" alt="">
+          </a>
+          <a><span class="-m-1.5 p-4 font-bold text-base">PropPay</span></a>
         </div>
+        <ul class="mt-5 flex flex-auto gap-5">
+          <li><a href="/privacy-policy" class="hover:text-primary">นโยบายความเป็นส่วนตัว</a></li>
+          <li><a href="/cookie-policy" class="hover:text-primary">นโยบายการใช้คุกกี้</a></li>
+          <li><a href="/terms-and-conditions" class="hover:text-primary">เงื่อนไขการใช้งาน</a></li>
+        </ul>
       </div>
-    </div>
-    <div class="flex flex-col justify-between gap-5 border-b pb-10 lg:flex-row lg:pb-16">
-      <div class="flex lg:flex-1 border-b-black">
-        <a href="index.html" class="-m-1.5 p-1.5">
-          <span class="sr-only">Proppay</span>
-          <img class="h-8 w-auto" src="/img/logo.png" alt="">
-        </a>
-        <a><span class="-m-1.5 p-4 font-bold text-base">PropPay</span></a>
-      </div>
-      <ul class="mt-5 flex flex-auto pl-20">
-        <li><a href="/privacy-policy" class="hover:text-primary">นโยบายความเป็นส่วนตัว</a></li>
-        <li><a href="/cookie-policy" class="hover:text-primary">นโยบายการใช้คุกกี้</a></li>
-        <li><a href="/terms-and-conditions" class="hover:text-primary">เงื่อนไขการใช้งาน</a></li>
-      </ul>
+ 
 
       <!-- icon at footage -->
       <div class="flex items-center gap-8">
@@ -510,22 +471,15 @@
           <span class="sr-only">Youtube</span>
           <svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" viewBox="0 0 256 180"><path fill="#f00" d="M250.346 28.075A32.18 32.18 0 0 0 227.69 5.418C207.824 0 127.87 0 127.87 0S47.912.164 28.046 5.582A32.18 32.18 0 0 0 5.39 28.24c-6.009 35.298-8.34 89.084.165 122.97a32.18 32.18 0 0 0 22.656 22.657c19.866 5.418 99.822 5.418 99.822 5.418s79.955 0 99.82-5.418a32.18 32.18 0 0 0 22.657-22.657c6.338-35.348 8.291-89.1-.164-123.134"/><path fill="#fff" d="m102.421 128.06l66.328-38.418l-66.328-38.418z"/></svg>
         </a>
-        <a href="#" class="text-gray-600 hover:text-gray-800">
-          <span class="sr-only">GitHub</span>
-          <svg class="size-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-            <path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd" />
-          </svg>
-        </a>
-        <a href="#" class="text-gray-600 hover:text-gray-800">
-          <span class="sr-only">YouTube</span>
-          <svg class="size-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-            <path fill-rule="evenodd" d="M19.812 5.418c.861.23 1.538.907 1.768 1.768C21.998 8.746 22 12 22 12s0 3.255-.418 4.814a2.504 2.504 0 0 1-1.768 1.768c-1.56.419-7.814.419-7.814.419s-6.255 0-7.814-.419a2.505 2.505 0 0 1-1.768-1.768C2 15.255 2 12 2 12s0-3.255.417-4.814a2.507 2.507 0 0 1 1.768-1.768C5.744 5 11.998 5 11.998 5s6.255 0 7.814.418ZM15.194 12 10 15V9l5.194 3Z" clip-rule="evenodd" />
-          </svg>
-        </a>
+
       </div>
     </div>
-    <div class="mt-8 border-t border-gray-900/10 pt-8 md:flex md:items-center md:justify-between">
-      <p class="mt-8 text-sm/6 text-gray-600 md:order-1 md:mt-0">&copy; 2024 PropPay. All rights reserved.</p>
+  </div>
+
+
+
+    <div class="border-t border-gray-900/10 md:flex md:items-center md:justify-center">
+      <p class="flex flex-col gap-5 pt-8 lg:flex-row text-gray-500">&copy; 2025 PropPay. All rights reserved.</p>
     </div>
   </div>
 </footer>
